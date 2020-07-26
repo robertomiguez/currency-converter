@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select regression test 1`] = `
+<select
+  class="select-css"
+>
+  <option
+    value="USD"
+  >
+    
+        USD
+    
+  </option>
+  <option
+    value="GBP"
+  >
+    
+        GBP
+    
+  </option>
+</select>
+`;
