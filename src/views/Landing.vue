@@ -46,7 +46,7 @@ export default {
 
 @media only screen and (max-width: 600px) {
   .content {
-    padding-top: 50px;
+    padding-top: 30px;
     height: 200px;
   }
   .description {

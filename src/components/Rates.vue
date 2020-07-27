@@ -29,6 +29,7 @@ export default {
   justify-content: center;
   align-items: center;
   margin-right: 150px;
+  margin-bottom: 3px;
 }
 .flex-grid .amount {
   flex: 0 0 350px;
@@ -46,6 +47,7 @@ export default {
   text-align: center;
   font-size: 16px;
 }
+
 @media only screen and (max-width: 600px) {
   .flex-grid {
     margin-right: 120px;
