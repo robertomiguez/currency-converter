@@ -39,10 +39,14 @@ export default new Vuex.Store({
     },
     async updateTickers ({ commit, state }, amount) {
       try {
-        if (amount === 0) return
-        const tickersCalculated = await [...state.tickers.map(ticker => {
-          return { ...ticker, ask: (ticker.ask * amount).toFixed(5) }
-        })]
+        let tickersCalculated = []
+        if (amount === 0) {
+          commit('SET_TICKERS_CALCULATED', tickersCalculated)
+        } else {
+          tickersCalculated = await [...state.tickers.map(ticker => {
+            return { ...ticker, ask: (ticker.ask * amount).toFixed(5) }
+          })]
+        }
         commit('SET_TICKERS_CALCULATED', tickersCalculated)
       } catch (error) {
         // TODO Change to friendly message on page
