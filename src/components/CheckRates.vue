@@ -81,4 +81,13 @@ export default {
   padding-bottom: 5px;
 }
 
+@media only screen and (max-width: 600px) {
+  .wrap {
+    width: 300px;
+  }
+  .amount {
+    width: 200px;
+  }
+}
+
 </style>

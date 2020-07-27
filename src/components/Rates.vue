@@ -26,25 +26,39 @@ export default {
 <style>
 .flex-grid {
   display: flex;
-  margin: 20px 0px;
   justify-content: center;
   align-items: center;
-  margin-right: 100px;
+  margin-right: 150px;
 }
 .flex-grid .amount {
-  width: 180px;
+  flex: 0 0 350px;
   text-align: center;
   font-size: 16px;
   background-color: #fff;
 }
 .flex-grid .flag {
-  width: 50px;
+  flex: 0 0 45px;
   text-align: center;
   font-size: 16px;
 }
 .flex-grid .currency {
-  width: 10px;
+  flex: 0 0 45px;
   text-align: center;
   font-size: 16px;
+}
+@media only screen and (max-width: 600px) {
+  .flex-grid {
+    margin-right: 120px;
+  }
+  .flex-grid .amount {
+    flex: 0 0 270px;
+  }
+  .flex-grid .flag {
+    flex: 0 0 35px;
+  }
+  .flex-grid .currency {
+    font-size: 14px;
+    flex: 0 0 35px;
+  }
 }
 </style>

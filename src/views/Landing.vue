@@ -40,5 +40,13 @@ export default {
   padding-bottom: 25px;
   margin: auto;
   width: 22em;
+  font-size: 1.075em;
 }
+
+@media only screen and (max-width: 600px) {
+  .description {
+    font-size: 0.875em;
+  }
+}
+
 </style>
