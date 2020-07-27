@@ -33,6 +33,7 @@ export default {
 .title {
   font-size: 1.875em;
   padding-bottom: 20px;
+  font-weight: 900;
 }
 .description {
   color: darkgray;
@@ -44,6 +45,10 @@ export default {
 }
 
 @media only screen and (max-width: 600px) {
+  .content {
+    padding-top: 50px;
+    height: 200px;
+  }
   .description {
     font-size: 0.875em;
   }
