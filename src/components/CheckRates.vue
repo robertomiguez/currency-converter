@@ -21,7 +21,7 @@ export default {
   },
   data: () => ({
     amount: 0,
-    currencies: ['USD', 'GBP', 'EUR', 'BRL'],
+    currencies: ['USD', 'GBP', 'EUR', 'BRL', 'BTC', 'ETH'],
     currency: 'USD',
     money: {
       decimal: '.',
@@ -41,7 +41,7 @@ export default {
       try {
         this.currency = selected
         await this.loadTickers(this.currency)
-        await this.updateTickers(this.currency)
+        await this.updateTickers(this.amount)
       } catch (error) {
         this.images = []
       }
