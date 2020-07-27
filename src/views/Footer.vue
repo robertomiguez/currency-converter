@@ -1,7 +1,7 @@
 <template>
     <div class="footer">
         <div class="follow">
-            Follow me:
+            Dummy content | Follow me:
             <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'linkedin' }" @click="openUrl('https://linkedin.com/in/miguezr')" class='icon'/>
         </div>
     </div>
@@ -25,7 +25,7 @@ export default {
    width: 100%;
    background-color: #4ACD64;
    color: white;
-   text-align: right;
+   text-align: center;
    height: 30px;
 
 }
