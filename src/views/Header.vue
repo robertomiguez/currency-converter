@@ -6,6 +6,7 @@
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
       <ul class="menu">
+        <li><router-link to='/'>Home</router-link></li>
         <li><router-link to='/personal'>Personal</router-link></li>
         <li><router-link to='/business'>Business</router-link></li>
         <li><router-link to='/partners'>Partners</router-link></li>
