@@ -3,22 +3,25 @@
         <div class='title'>Currency Converter</div>
         <div class='description'>{{description}}</div>
         <CheckRates/>
-        <Rates/>
+        <Rates class='rates'/>
+        <Error/>
     </div>
 </template>
 
 <script>
 import CheckRates from '../components/CheckRates'
 import Rates from '../components/Rates'
+import Error from '../components/Error'
 
 export default {
   name: 'Landing',
   components: {
     CheckRates,
-    Rates
+    Rates,
+    Error
   },
   data: () => ({
-    description: 'Receive competitive and transparent pricing with no hidden spreads. See how we compare.'
+    description: 'All our data is provided for free, and as-is without any warranty.'
   })
 }
 </script>
@@ -43,6 +46,9 @@ export default {
   width: 22em;
   font-size: 1.075em;
 }
+.rates {
+  padding-bottom: 50px;
+}
 
 @media only screen and (max-width: 600px) {
   .content {
@@ -53,5 +59,4 @@ export default {
     font-size: 0.875em;
   }
 }
-
 </style>

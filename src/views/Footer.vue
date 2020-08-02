@@ -1,7 +1,7 @@
 <template>
     <div class="footer">
         <div class="follow">
-            Dummy content | Follow me:
+            Test version | Powered by CoinGecko API | Follow me:
             <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'linkedin' }" @click="openUrl('https://linkedin.com/in/miguezr')" class='icon'/>
         </div>
     </div>
