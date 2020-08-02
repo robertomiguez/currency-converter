@@ -1,12 +1,12 @@
 <template>
     <div>
         <div class="flex-grid" v-for="ticker in tickersCalculated" :key="ticker.pair">
-            <div class="amount">{{ ticker.ask }}</div>
-            <div class="flag">
+            <div class="amount">{{ ticker.last }}</div>
+            <!-- <div class="flag">
                 <img :src="require(`../assets/${ticker.pair.slice(3,6)}.png`)">
-            </div>
+            </div> -->
             <div class="currency">
-                {{ticker.pair.slice(3,6)}}
+                {{ticker.target}}
             </div>
         </div>
     </div>

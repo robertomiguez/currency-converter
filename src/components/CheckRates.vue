@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
+import { mapActions, mapGetters } from 'vuex'
 import { Money } from 'v-money'
 import Select from '../components/Select'
 
@@ -21,14 +21,13 @@ export default {
   },
   data: () => ({
     amount: 0,
-    currencies: ['USD', 'GBP', 'EUR', 'BRL', 'BTC', 'ETH'],
-    currency: 'USD',
+    currency: 'BTC',
     money: {
       decimal: '.',
       thousands: ',',
       prefix: '',
       suffix: '',
-      precision: 2,
+      precision: 5,
       masked: false
     }
   }),
@@ -47,6 +46,9 @@ export default {
       }
     }
   },
+  computed: mapGetters({
+    currencies: 'getCurrenciesId'
+  }),
   mounted () {
     this.loadTickers(this.currency)
   }
