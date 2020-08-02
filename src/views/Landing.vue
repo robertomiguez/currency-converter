@@ -3,7 +3,7 @@
         <div class='title'>Currency Converter</div>
         <div class='description'>{{description}}</div>
         <CheckRates/>
-        <Rates/>
+        <Rates class='rates'/>
     </div>
 </template>
 
@@ -18,7 +18,7 @@ export default {
     Rates
   },
   data: () => ({
-    description: 'Receive competitive and transparent pricing with no hidden spreads. See how we compare.'
+    description: 'All our data is provided for free, and as-is without any warranty.'
   })
 }
 </script>
@@ -42,6 +42,9 @@ export default {
   margin: auto;
   width: 22em;
   font-size: 1.075em;
+}
+.rates {
+  padding-bottom: 50px;
 }
 
 @media only screen and (max-width: 600px) {
