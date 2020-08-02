@@ -5,17 +5,31 @@ exports[`Select regression test 1`] = `
   class="select-css"
 >
   <option
-    value="USD"
+    value="BTC"
   >
     
-        USD
+        BTC
     
   </option>
   <option
-    value="GBP"
+    value="ETH"
   >
     
-        GBP
+        ETH
+    
+  </option>
+  <option
+    value="DASH"
+  >
+    
+        DASH
+    
+  </option>
+  <option
+    value="BAT"
+  >
+    
+        BAT
     
   </option>
 </select>

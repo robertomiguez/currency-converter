@@ -3,8 +3,9 @@
 exports[`Landing renders the component 1`] = `
 <div class="content">
   <div class="title">Currency Converter</div>
-  <div class="description">Receive competitive and transparent pricing with no hidden spreads. See how we compare.</div>
+  <div class="description">All our data is provided for free, and as-is without any warranty.</div>
   <checkrates-stub></checkrates-stub>
-  <rates-stub></rates-stub>
+  <rates-stub class="rates"></rates-stub>
+  <error-stub></error-stub>
 </div>
 `;

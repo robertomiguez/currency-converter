@@ -6,7 +6,7 @@ let wrapper
 beforeEach(() => {
   wrapper = shallowMount(Select, {
     propsData: {
-      options: ['USD', 'GBP']
+      options: ['BTC', 'ETH', 'DASH', 'BAT']
     },
     mocks: {},
     stubs: {},
@@ -21,7 +21,7 @@ afterEach(() => {
 describe('Select', () => {
   test('testing component props', () => {
     expect(wrapper.find('.select-css').text().replace(/\s+/g, ' '))
-      .toBe('USD GBP')
+      .toBe('BTC ETH DASH BAT')
   })
 
   test('regression test', () => {
