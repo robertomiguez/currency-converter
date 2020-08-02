@@ -1,1 +1,4 @@
-GET https://api.uphold.com/v0/ticker/USD
+GET https://api.coingecko.com/api/v3/coins/dash/tickers?exchange_ids=binance&include_exchange_logo=true
+
+
+GET https://api.coingecko.com/api/v3/coins/list 
